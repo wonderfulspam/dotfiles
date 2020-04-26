@@ -1,0 +1,14 @@
+[user]
+	email = emt@magenta-aps.dk
+	name = Emil Thorenfeldt
+	username = wonderfulspam
+[log]
+#  date = relative
+[format]
+  pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(28,trunc)%ad %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
+[merge]
+  renamelimit = 4000
+[alias]
+	pushf = push --force-with-lease
+[rebase]
+	autosquash = true

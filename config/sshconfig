@@ -1,0 +1,65 @@
+Host *
+  AddKeysToAgent yes
+  ForwardAgent yes
+  ServerAliveInterval 60
+
+Host platon
+  HostName platon.magenta-aps.dk
+  User emt
+
+Host tsshwgw.it.ku.dk
+  User ztk245a
+
+Host cmsdbtest* cmswebtest01 cmsnavtest* cmsweb01tl
+  GSSAPIAuthentication no
+  User ztk245a
+  ProxyCommand ssh -W %h.ipa.ku.dk:%p ztk245a@tsshgw.it.ku.dk
+
+Host cmsweb* cmsnav* cmsdb*
+  GSSAPIAuthentication no
+  User ztk245a
+  ProxyCommand ssh -W %h.ipa.ku.dk:%p ztk245a@sshgw.it.ku.dk
+  RemoteForward 2268 git.magenta.dk:22
+  RemoteForward 5679 platon.magenta-aps.dk:22
+
+Host gitlab.magenta.dk
+  User emt
+
+Host digitalocean
+  HostName 142.93.96.104
+  User root
+
+Host ombudtest
+  HostName 178.23.178.10
+  User emt
+
+Host ombudprod
+  HostName 195.182.36.133
+  User emt
+
+Host filth
+  HostName filth.biz
+  User emil
+
+#magentavps27
+Host bcs_public
+  HostName 178.23.178.20
+  User emt
+
+#magentavps40
+Host bcs_api
+  HostName 178.23.178.21
+  User emt
+
+Host bcs_ua
+  HostName 185.81.165.125
+  User root
+
+Host manfreds
+  HostName ssh.manfreds.dk
+  User manfreds.dk
+
+Host driftinfo_backup
+  HostName ku.magenta-aps.dk
+  User emt
+

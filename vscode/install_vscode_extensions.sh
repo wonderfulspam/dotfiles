@@ -1,0 +1,15 @@
+code --install-extension d9705996.perl-toolbox
+code --install-extension eamodio.gitlens
+code --install-extension fatihacet.gitlab-workflow
+code --install-extension liximomo.sftp
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode.Go
+code --install-extension rust-lang.rust
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension viatsko.html-mason

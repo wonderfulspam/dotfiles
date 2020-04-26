@@ -1,0 +1,32 @@
+{
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "explorer",
+    "gitlens.views.lineHistory.location": "explorer",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "perl-toolbox.syntax.path": "/home/emt/perl5/bin/",
+    "perl-toolbox.lint.path": "/home/emt/perl5/bin/",
+    "perl-toolbox.syntax.enabled": false,
+    "perl-toolbox.lint.excludedPolicies": [
+        "Perl::Critic::Policy::CodeLayout::RequireTidyCode",
+        "Perl::Critic::Policy::Modules::RequireVersionVar",
+        "Perl::Critic::Policy::Variables::ProhibitPunctuationVars",
+        "Perl::Critic::Policy::InputOutput::RequireBracedFileHandleWithPrint",
+        "Perl::Critic::Policy::InputOutput::RequireCheckedSyscalls",
+        "Perl::Critic::Policy::ValuesAndExpressions::ProhibitMagicNumbers",
+        "Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyQuotes",
+        "Perl::Critic::Policy::Documentation::RequirePodSections"
+    ],
+    "files.watcherExclude": {
+        "./var/**": true
+    },
+    "files.associations": {
+        "**/mason/**/*": "mason",
+        "**/bootstrap/**/*": "mason",
+        "**/*.mason": "mason",
+        "**/.gitlab": "markdown"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "gitlab.instanceUrl": "https://git.magenta.dk"
+}
