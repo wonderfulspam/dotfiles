@@ -12,3 +12,4 @@ cp ~/.config/Code/User/settings.json vscode/
 cp ~/.gitconfig git/gitconfig
 cp ~/.ssh/config config/sshconfig
 cp ~/.bashrc config/bashrc
+cp ~/.perlcriticrc config/perlcriticrc
