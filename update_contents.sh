@@ -12,4 +12,5 @@ cp ~/.config/Code/User/settings.json vscode/
 cp ~/.gitconfig git/gitconfig
 cp ~/.ssh/config config/sshconfig
 cp ~/.bashrc config/bashrc
+cp ~/.bash_it/custom/themes/emil/emil.theme.bash config/emil.theme.bash
 cp ~/.perlcriticrc config/perlcriticrc
