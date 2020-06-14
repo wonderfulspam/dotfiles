@@ -53,15 +53,13 @@ if ! head -n 1 $1 | grep -q -P "$PATTERN"; then
         fi
     fi
 
-    # Get absolute path of folder immediately above this script
-    PARENT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; cd ../ ; pwd -P )
-    # Capture ticket no. from branch name in .git/HEAD
-    TICKET=$(grep -P -o "(\d{5})" "${PARENT_PATH}/HEAD")
+    # Capture ticket no. from branch name
+    TICKET=$(git rev-parse --abbrev-ref HEAD | grep -P -o "(\d{5})")
 
-    # Handle non-match in .git/HEAD
+    # Handle non-match
     if [ -z $TICKET ]; then
         if [ ! $IGNORE_NON_MATCH = true ]; then
-            ekko "Could not find ticket no. in .git/HEAD, aborting"
+            ekko "Could not find ticket no. in HEAD, aborting"
             exit 1
         else
             ekko "Could not find ticket no., ignoring error"
