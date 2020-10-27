@@ -14,3 +14,11 @@ cp ~/.ssh/config config/sshconfig
 cp ~/.bashrc config/bashrc
 cp ~/.bash_it/custom/themes/emil/emil.theme.bash config/emil.theme.bash
 cp ~/.perlcriticrc config/perlcriticrc
+cp ~/.config/starship.toml config/starship.toml
+cp ~/.config/alacritty/alacritty.yml config/alacritty.yml
+
+### NVIM ###
+cp -r ~/.config/nvim/* config/nvim/ && rm -rf config/nvim/plugged/
+
+### LeftWM ###
+cp -rL ~/.config/leftwm/* config/leftwm/
