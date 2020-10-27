@@ -5,12 +5,28 @@
 [log]
 #  date = relative
 [format]
-  pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(28,trunc)%ad %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
+  pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(28,trunc)%cD%x08%x08 %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
+[mergetool "nvim"]
+	cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 [merge]
-  renamelimit = 4000
+	tool = nvim
+# automatically launch merge tool without displaying a prompt
+[mergetool]
+	renamelimit = 4000
+	prompt = false
 [alias]
 	pushf = push --force-with-lease
+	lgn = "!f() { lines=${1-20}; git log -n \"$lines\" --graph --oneline; }; f"
 [rebase]
 	autosquash = true
 [pull]
-	rebase = true
+	rebase = merges
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	verbose = true
+[core]
+	excludesfile = /home/emt/.gitignore

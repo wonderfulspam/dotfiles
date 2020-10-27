@@ -7,6 +7,7 @@
     "perl-toolbox.syntax.path": "/home/emt/perl5/bin/",
     "perl-toolbox.lint.path": "/home/emt/perl5/bin/",
     "perl-toolbox.syntax.enabled": false,
+    "perl-toolbox.lint.severity": "gentle",
     "perl-toolbox.lint.excludedPolicies": [
         "Perl::Critic::Policy::CodeLayout::RequireTidyCode",
         "Perl::Critic::Policy::Modules::RequireVersionVar",
@@ -15,7 +16,9 @@
         "Perl::Critic::Policy::InputOutput::RequireCheckedSyscalls",
         "Perl::Critic::Policy::ValuesAndExpressions::ProhibitMagicNumbers",
         "Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyQuotes",
-        "Perl::Critic::Policy::Documentation::RequirePodSections"
+        "Perl::Critic::Policy::Documentation::RequirePodSections",
+        "Perl::Critic::Policy::ErrorHandling::RequireCarping",
+        "Perl::Critic::Policy::Documentation::RequirePodAtEnd",
     ],
     "files.watcherExclude": {
         "./var/**": true
@@ -24,9 +27,12 @@
         "**/mason/**/*": "mason",
         "**/bootstrap/**/*": "mason",
         "**/*.mason": "mason",
-        "**/.gitlab": "markdown"
+        "**/.gitlab": "markdown",
+        "docs/system/bootstrap_cookies.js": "mason"
     },
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
-    "gitlab.instanceUrl": "https://git.magenta.dk"
+    "gitlab.instanceUrl": "https://git.magenta.dk",
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "editor.minimap.enabled": false
 }

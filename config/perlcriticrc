@@ -1,2 +1,5 @@
 [InputOutput::RequireBriefOpen]
 lines = 15
+
+[Subroutines::ProhibitUnusedPrivateSubroutines]
+skip_when_using = Moose::Role Moo::Role Role::Tiny
