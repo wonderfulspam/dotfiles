@@ -7,6 +7,12 @@ code --list-extensions | xargs -L 1 echo code --install-extension > vscode/insta
 # Copy current config
 cp ~/.config/Code/User/settings.json vscode/
 
+### Rust ###
+# Generate installation script for all packages
+EXCLUDED_RUST_PACKAGES="rudiments|cargo-espflash"
+cargo install-update -l | grep -oP "^([a-zA-Z0-9-_]*)(?=\s+v.*v.*)" |\
+	egrep -v "$EXCLUDED_RUST_PACKAGES" |\
+	xargs -L 1 echo cargo install > install_rust_crates.sh
 
 ### Various config ###
 cp ~/.gitconfig git/gitconfig
