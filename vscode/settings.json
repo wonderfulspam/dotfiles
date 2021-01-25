@@ -34,5 +34,14 @@
     "explorer.confirmDragAndDrop": false,
     "gitlab.instanceUrl": "https://git.magenta.dk",
     "markdown.extension.preview.autoShowPreviewToSide": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDelete": false,
+    "rust-analyzer.cargo.allFeatures": true,
+    "rust-analyzer.diagnostics.disabled": [
+        "macro-error"
+    ],
+    "[rust]": {
+        "editor.formatOnSave": true,
+    }
 }

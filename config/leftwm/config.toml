@@ -38,6 +38,12 @@ key = "x"
 
 [[keybind]]
 command = "Execute"
+value = "zoop"
+modifier = ["modkey", "Shift"]
+key = "z"
+
+[[keybind]]
+command = "Execute"
 value = "slock"
 modifier = ["modkey"]
 key = "l"

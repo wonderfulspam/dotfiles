@@ -10,17 +10,14 @@ Host platon
 Host tsshwgw.it.ku.dk
   User ztk245a
 
-Host cmsdbtest* cmswebtest01 cmsnavtest* cmsweb01tl
-  GSSAPIAuthentication no
+Host cmsweb* cmsnav* cmsdb* cmsdbtest* cmswebtest01 cmsnavtest* cmsweb01tl
   User ztk245a
-  ProxyCommand ssh -W %h.ipa.ku.dk:%p ztk245a@tsshgw.it.ku.dk
-
-Host cmsweb* cmsnav* cmsdb*
-  GSSAPIAuthentication no
-  User ztk245a
-  ProxyCommand ssh -W %h.ipa.ku.dk:%p ztk245a@sshgw.it.ku.dk
+  HostName %h.ipa.ku.dk
   RemoteForward 2268 git.magenta.dk:22
-  RemoteForward 5679 platon.magenta-aps.dk:22
+
+Host ngcms*
+  User ztk245-unicph
+  HostName %htl.unicph.domain
 
 Host gitlab.magenta.dk
   User emt
