@@ -22,6 +22,7 @@ cp ~/.bash_it/custom/themes/emil/emil.theme.bash config/emil.theme.bash
 cp ~/.perlcriticrc config/perlcriticrc
 cp ~/.config/starship.toml config/starship.toml
 cp ~/.config/alacritty/alacritty.yml config/alacritty.yml
+cp -r ~/.config/fish/ config/
 
 ### NVIM ###
 cp -r ~/.config/nvim/* config/nvim/ && rm -rf config/nvim/plugged/
