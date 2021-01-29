@@ -1,4 +1,3 @@
-cargo install cargo-xbuild
 cargo install bandwhich
 cargo install bat
 cargo install cargo-edit

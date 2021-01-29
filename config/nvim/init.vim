@@ -303,6 +303,8 @@ map L $
 " ,c will copy entire buffer into clipboard
 noremap <leader>p :read !xsel --clipboard --output<cr>
 noremap <leader>c :w !xsel -ib<cr><cr>
+" Use default clipboard when yanking
+set clipboard=unnamedplus
 
 " <leader>s for Rg search
 noremap <leader>s :Rg

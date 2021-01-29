@@ -11,6 +11,7 @@ untracked = "?${count}"
 modified = "!${count}"
 deleted = "✘${count}"
 staged = "+${count}"
+conflicted = "=${count}"
 
 [gcloud]
 disabled = true
