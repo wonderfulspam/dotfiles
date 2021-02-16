@@ -1,3 +1,4 @@
+#!/bin/bash
 code --install-extension bungcip.better-toml
 code --install-extension d9705996.perl-toolbox
 code --install-extension eamodio.gitlens
@@ -17,6 +18,7 @@ code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension octref.vetur
+code --install-extension usernamehw.errorlens
 code --install-extension viatsko.html-mason
 code --install-extension vscodevim.vim
 code --install-extension yzhang.markdown-all-in-one
