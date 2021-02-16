@@ -2,8 +2,9 @@ abbr -a ls 'lsd'
 abbr -a cat 'bat'
 abbr -a gm 'git commit -m'
 abbr -a chk 'git checkout feature/ticket'
-abbr -a gdu 'git diff @ @{upstream}'
-abbr -a kukibana 'ssh -g -L5601:ngcmslog01tl:5601 ngcmsweb01'
+abbr -a gdu 'git diff @{upstream} @'
+abbr -a tkibana 'ssh -g -L5602:ngcmslog01tl:5601 ngcmsweb01tl'
+abbr -a pkibana 'ssh -g -L5602:ngcmslog01pl:5601 ngcmsweb01pl'
 
 starship init fish | source
 

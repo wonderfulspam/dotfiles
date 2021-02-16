@@ -9,10 +9,12 @@ SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_chk:git\x20checkout\x20feature/ticket
-SETUVAR _fish_abbr_gdu:git\x20diff\x20\x40\x20\x40\x7bupstream\x7d
+SETUVAR _fish_abbr_gdu:git\x20diff\x20\x40\x7bupstream\x7d\x20\x40
 SETUVAR _fish_abbr_gm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_kukibana:ssh\x20\x2dg\x20\x2dL5601\x3angcmslog01tl\x3a5601\x20ngcmsweb01
 SETUVAR _fish_abbr_ls:lsd
+SETUVAR _fish_abbr_pkibana:ssh\x20\x2dg\x20\x2dL5602\x3angcmslog01pl\x3a5601\x20ngcmsweb01pl
+SETUVAR _fish_abbr_tkibana:ssh\x20\x2dg\x20\x2dL5602\x3angcmslog01tl\x3a5601\x20ngcmsweb01tl
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
