@@ -30,3 +30,4 @@
 	verbose = true
 [core]
 	excludesfile = /home/emt/.gitignore
+	hooksPath = /home/emt/.config/globalhooks/

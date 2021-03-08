@@ -18,6 +18,7 @@ cargo install-update -l | grep -oP "^([a-zA-Z0-9-_]*)(?=\s+v.*v.*)" |\
 
 ### Various config ###
 cp ~/.gitconfig git/gitconfig
+cp -r ~/.config/globalhooks/ git/
 cp ~/.ssh/config config/sshconfig
 cp ~/.bashrc config/bashrc
 cp ~/.perlcriticrc config/perlcriticrc
