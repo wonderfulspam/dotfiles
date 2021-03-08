@@ -31,3 +31,6 @@ cp -r ~/.config/nvim/* config/nvim/ && rm -rf config/nvim/plugged/
 
 ### LeftWM ###
 cp -rL ~/.config/leftwm/* config/leftwm/
+
+### Scripts ###
+cp /usr/local/bin/git-fixup bin/
