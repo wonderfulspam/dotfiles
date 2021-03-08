@@ -1,10 +1,13 @@
 [git_branch]
+# Use unicode character instead of default
+# This allows for copy-pasting terminal output without invalid characters appearing
 #symbol = " "
 symbol = "⎇ "
 
+# Add count to everything, eg. ⇡5⇣1 instead of ⇕ or !3?2 instead of !?
 [git_status]
 ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+diverged = "⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 stashed = "\\$${count}"
 untracked = "?${count}"
@@ -13,5 +16,9 @@ deleted = "✘${count}"
 staged = "+${count}"
 conflicted = "=${count}"
 
+# Disable some useless and/or slow modules
 [gcloud]
+disabled = true
+
+[vagrant]
 disabled = true
