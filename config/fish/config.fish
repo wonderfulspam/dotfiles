@@ -7,10 +7,12 @@ abbr -a tkibana 'ssh -g -L5602:ngcmslog01tl:5601 ngcmsweb01tl'
 abbr -a pkibana 'ssh -g -L5602:ngcmslog01pl:5601 ngcmsweb01pl'
 
 starship init fish | source
+zoxide init fish | source
 
 setenv FZF_DEFAULT_COMMAND 'fd --type file --follow'
 setenv FZF_CTRL_T_COMMAND 'fd --type file --follow'
 setenv FZF_CTRL_R_OPTS '--exact'
+setenv FZF_CTRL_T_OPTS '--exact'
 
 setenv MANPAGER "nvim -c 'set ft=man' -"
 setenv MANWIDTH 80
