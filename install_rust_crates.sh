@@ -9,14 +9,11 @@ cargo install diesel_cli
 cargo install du-dust
 cargo install fd-find
 cargo install flamegraph
-cargo install git-delta
-cargo install gitui
 cargo install grex
 cargo install hyperfine
 cargo install leftwm
 cargo install lsd
 cargo install mdbook-open-git-repo
-cargo install mdbook-open-on-gh
 cargo install mdbook-toc
 cargo install mdcat
 cargo install nu
@@ -24,3 +21,4 @@ cargo install ripgrep
 cargo install sd
 cargo install starship
 cargo install tokei
+cargo install zoxide
