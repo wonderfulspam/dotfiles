@@ -17,7 +17,7 @@ Host cmsweb* cmsnav* cmsdb* cmsdbtest* cmswebtest01 cmsnavtest* cmsweb01tl
 
 Host ngcms*
   User ztk245-unicph
-  HostName %htl.unicph.domain
+  HostName %h.unicph.domain
 
 Host gitlab.magenta.dk
   User emt
