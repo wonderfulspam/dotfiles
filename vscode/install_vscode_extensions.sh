@@ -5,12 +5,15 @@ code --install-extension eamodio.gitlens
 code --install-extension ericcirone.masontidy
 code --install-extension GitLab.gitlab-workflow
 code --install-extension golang.go
+code --install-extension GraphQL.vscode-graphql
 code --install-extension korekontrol.saltstack
 code --install-extension lextudio.restructuredtext
 code --install-extension liximomo.sftp
+code --install-extension marp-team.marp-vscode
 code --install-extension matklad.rust-analyzer
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode-remote.remote-ssh
