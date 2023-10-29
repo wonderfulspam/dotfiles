@@ -32,7 +32,7 @@ done
 
 upstream=$(git rev-parse --abbrev-ref "@{upstream}" >/dev/null 2>&1)
 if [ -z "${upstream}" ]; then
-    fixup_range="${GIT_DEFAULT_FIXUP_RANGE:-origin/master..HEAD}"
+    fixup_range="${GIT_DEFAULT_FIXUP_RANGE:-origin/main..HEAD}"
 else
     fixup_range="${upstream}..HEAD"
 fi

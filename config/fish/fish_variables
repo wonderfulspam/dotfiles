@@ -6,7 +6,7 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:1
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_chk:git\x20checkout\x20feature/ticket
 SETUVAR _fish_abbr_gdu:git\x20diff\x20\x40\x7bupstream\x7d\x20\x40
@@ -17,9 +17,11 @@ SETUVAR _fish_abbr_pkibana:ssh\x20\x2dg\x20\x2dL5602\x3angcmslog01pl\x3a5601\x20
 SETUVAR _fish_abbr_tkibana:ssh\x20\x2dg\x20\x2dL5602\x3angcmslog01tl\x3a5601\x20ngcmsweb01tl
 SETUVAR _fisher_danhper_2F_fish_2D_ssh_2D_agent_files:/home/emt/\x2econfig/fish/functions/__ssh_agent_is_started\x2efish\x1e/home/emt/\x2econfig/fish/functions/__ssh_agent_start\x2efish\x1e/home/emt/\x2econfig/fish/conf\x2ed/fish\x2dssh\x2dagent\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/home/emt/\x2econfig/fish/functions/__bass\x2epy\x1e/home/emt/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_evanlucas_2F_fish_2D_kubectl_2D_completions_files:/home/emt/\x2econfig/fish/completions/kubectl\x2efish
 SETUVAR _fisher_jethrokuan_2F_fzf_files:/home/emt/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_open\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e/home/emt/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e/home/emt/\x2econfig/fish/conf\x2ed/fzf\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/emt/\x2econfig/fish/functions/fisher\x2efish\x1e/home/emt/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/fzf\x1edanhper/fish\x2dssh\x2dagent\x1eedc/bass
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/home/emt/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/home/emt/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/home/emt/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/home/emt/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/home/emt/\x2econfig/fish/functions/nvm\x2efish\x1e/home/emt/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/home/emt/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/fzf\x1edanhper/fish\x2dssh\x2dagent\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1eevanlucas/fish\x2dkubectl\x2dcompletions
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -49,4 +51,7 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/emt/\x2efzf/bin
+SETUVAR nvm_data:/home/emt/\x2elocal/share/nvm
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

@@ -18,6 +18,7 @@ Host cmsweb* cmsnav* cmsdb* cmsdbtest* cmswebtest01 cmsnavtest* cmsweb01tl
 Host ngcms*
   User ztk245-unicph
   HostName %h.unicph.domain
+  AddressFamily inet
 
 Host gitlab.magenta.dk
   User emt
@@ -26,12 +27,20 @@ Host digitalocean
   HostName 142.93.96.104
   User root
 
-Host ombudtest
+Host ombudtest magentavps35
   HostName 178.23.178.10
   User emt
 
-Host ombudprod
+Host ombudprod magentavps21
   HostName 195.182.36.133
+  User emt
+
+Host ombudnytest magentavps51
+  HostName 178.23.177.156
+  User emt
+
+Host icinga-master magentavps41
+  HostName 178.23.177.229
   User emt
 
 Host filth
@@ -60,3 +69,15 @@ Host driftinfo_backup
   HostName ku.magenta-aps.dk
   User emt
 
+Host jump
+  HostName jump.magenta.dk
+  User emt
+  ForwardAgent yes
+
+Host saltmaster-test
+  HostName 195.182.36.137
+  User emt
+
+Host saltmaster-prod
+  HostName 178.23.177.238
+  User emt

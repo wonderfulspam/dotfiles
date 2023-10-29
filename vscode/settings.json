@@ -1,35 +1,8 @@
 {
-    "gitlens.views.repositories.location": "scm",
-    "gitlens.views.fileHistory.location": "explorer",
-    "gitlens.views.lineHistory.location": "explorer",
-    "gitlens.views.compare.location": "gitlens",
-    "gitlens.views.search.location": "gitlens",
     "perl-toolbox.syntax.path": "/home/emt/perl5/bin/",
     "perl-toolbox.lint.path": "/home/emt/perl5/bin/",
     "perl-toolbox.syntax.enabled": false,
-    "perl-toolbox.lint.severity": "gentle",
-    "perl-toolbox.lint.excludedPolicies": [
-        "Perl::Critic::Policy::CodeLayout::RequireTidyCode",
-        "Perl::Critic::Policy::Modules::RequireVersionVar",
-        "Perl::Critic::Policy::Variables::ProhibitPunctuationVars",
-        "Perl::Critic::Policy::InputOutput::RequireBracedFileHandleWithPrint",
-        "Perl::Critic::Policy::InputOutput::RequireCheckedSyscalls",
-        "Perl::Critic::Policy::ValuesAndExpressions::ProhibitMagicNumbers",
-        "Perl::Critic::Policy::ValuesAndExpressions::ProhibitEmptyQuotes",
-        "Perl::Critic::Policy::Documentation::RequirePodSections",
-        "Perl::Critic::Policy::ErrorHandling::RequireCarping",
-        "Perl::Critic::Policy::Documentation::RequirePodAtEnd",
-    ],
-    "files.watcherExclude": {
-        "./var/**": true
-    },
-    "files.associations": {
-        "**/mason/**/*": "mason",
-        "**/bootstrap/**/*": "mason",
-        "**/*.mason": "mason",
-        "**/.gitlab": "markdown",
-        "docs/system/bootstrap_cookies.js": "mason"
-    },
+    "perl-toolbox.lint.severity": "harsh",
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
     "gitlab.instanceUrl": "https://git.magenta.dk",
@@ -45,11 +18,33 @@
         "editor.formatOnSave": true,
     },
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[mason]": {
+        "editor.defaultFormatter": "ericcirone.masontidy"
+    },
+    "perl-toolbox.lint.useProfile": true,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "search.useIgnoreFiles": false,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.md": "markdown"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

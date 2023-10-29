@@ -1,11 +1,11 @@
 [user]
-	email = emt@magenta-aps.dk
+	email = charlatanoftime@gmail.com
 	name = Emil Thorenfeldt
 	username = wonderfulspam
 [log]
-#  date = relative
+	date = local
 [format]
-  pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(28,trunc)%cD%x08%x08 %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
+  pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(28,trunc)%aD%x08%x08 %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
 [mergetool "nvim"]
 	cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 [merge]
@@ -17,10 +17,14 @@
 [alias]
 	pushf = push --force-with-lease
 	lgn = "!f() { lines=${1-20}; git log -n \"$lines\" --graph --oneline; }; f"
+	cof = "! a=$(git rev-parse --is-inside-work-tree > /dev/null 2>&1 && git branch -a | sed -e \"\\,HEAD\\|$(git branch --show-current),d\" | sed \"s,remotes/[a-zA-Z0-9_\\-]\\+/,,\" | sort | cut -c 3- | uniq | fzf --exact --preview-window right:70% --preview=\"git log --color=always --format=\\\"%s (%Cred<<<%cn>>>%Creset, %Cgreen%cr%Creset)\\\"  $(git symbolic-ref refs/remotes/origin/HEAD | sed \"s,refs/remotes/,,\")..origin/{} | perl -pe \\\"s/<<<(\\S*)\\s?.*>>>/\\1/\\\"\" | xargs -r git checkout); [ -n \"$a\" ] && echo \"$a\" | cowsay -n | lolcat -D -f 0.3 -b 1.0"
+	co = "! ~/mjav.sh"
+	local = "!git branch --format '%(refname:short) %(upstream:short)' | awk '{if (!$2) print $1;}'"
 [rebase]
 	autosquash = true
+	autoStash = true
 [pull]
-	rebase = merges
+	rebase = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -28,6 +32,13 @@
 	required = true
 [commit]
 	verbose = true
-[core]
-	excludesfile = /home/emt/.gitignore
-	hooksPath = /home/emt/.config/globalhooks/
+#[core]
+#	hooksPath = /home/emt/.config/globalhooks/
+[advice]
+	detachedHead = false
+	skippedCherryPicks = false
+[maintenance]
+	repo = /home/emt/Documents/code/ku-obvius-dev/src/www.ku.dk
+[delta]
+	hyperlinks = true
+	hyperlinks-file-link-format = "file-line://{path}:{line}"

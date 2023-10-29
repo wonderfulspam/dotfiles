@@ -22,6 +22,7 @@ cp -r ~/.config/globalhooks/ git/
 cp ~/.ssh/config config/sshconfig
 cp ~/.bashrc config/bashrc
 cp ~/.perlcriticrc config/perlcriticrc
+cp ~/.perltidyrc config/perltidyrc
 cp ~/.config/starship.toml config/starship.toml
 cp ~/.config/alacritty/alacritty.yml config/alacritty.yml
 cp -r ~/.config/fish/ config/

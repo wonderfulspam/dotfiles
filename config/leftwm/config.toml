@@ -31,6 +31,11 @@ modifier = ["modkey", "Shift"]
 key = "r"
 
 [[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
 command = "Execute"
 value = "pkill leftwm"
 modifier = ["modkey", "Shift"]

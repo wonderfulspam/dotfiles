@@ -1,10 +1,7 @@
 abbr -a ls 'lsd'
 abbr -a cat 'bat'
 abbr -a gm 'git commit -m'
-abbr -a chk 'git checkout feature/ticket'
 abbr -a gdu 'git diff @{upstream} @'
-abbr -a tkibana 'ssh -g -L5602:ngcmslog01tl:5601 ngcmsweb01tl'
-abbr -a pkibana 'ssh -g -L5602:ngcmslog01pl:5601 ngcmsweb01pl'
 
 starship init fish | source
 zoxide init fish | source
@@ -27,3 +24,7 @@ export DOCKER_BUILDKIT="1"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && bass source "$NVM_DIR/nvm.sh"  # This loads nvm
+
+autocutsel -fork -selection CLIPBOARD
+autocutsel -fork -selection PRIMARY
+#source ~/.asdf/asdf.fish

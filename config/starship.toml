@@ -22,3 +22,12 @@ disabled = true
 
 [vagrant]
 disabled = true
+
+[python]
+disabled = true
+
+[perl]
+disabled = true
+
+[nodejs]
+disabled = true

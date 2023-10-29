@@ -1,0 +1,1 @@
+/home/emt/.asdf/completions/asdf.fish

@@ -5,7 +5,10 @@ font:
   bold:
     family: FiraCode Nerd Font
     style: Bold
-  size: 11
+  size: 8
+
+hints:
+  hyperlinks: true
 
 window:
   padding:
